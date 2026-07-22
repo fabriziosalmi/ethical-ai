@@ -75,6 +75,15 @@
             font-size: 1.25rem;
         }
         
+        .ai-notice {
+            background-color: var(--card-bg-color);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            line-height: 1.55;
+        }
+
         .metadata {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -318,6 +327,14 @@
             <h1>Ethical AI Self-Assessment Report</h1>
             <p>Generated on 2025-05-03 16:09:48</p>
         </header>
+
+        <p class="ai-notice" role="note">
+            <strong>Artificially generated content.</strong>
+            The scores and the commentary in this report were produced by the
+            language model <em>qwen2.5-coder-3b-instruct-mlx</em> (LMSTUDIO) responding to a
+            fixed questionnaire. They are automated output, not a human
+            assessment.
+        </p>
         
         <div class="metadata">
             <div class="metadata-item">

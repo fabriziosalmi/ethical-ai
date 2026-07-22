@@ -96,6 +96,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             font-size: 1.25rem;
         }
         
+        .ai-notice {
+            background-color: var(--card-bg-color);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            line-height: 1.55;
+        }
+
         .metadata {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -339,7 +348,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <h1>{{ title }}</h1>
             <p>Generated on {{ current_date }}</p>
         </header>
-        
+
+        <p class="ai-notice" role="note">
+            <strong>Artificially generated content.</strong>
+            The scores and the commentary in this report were produced by the
+            language model <em>{{ model }}</em> ({{ provider }}) responding to a
+            fixed questionnaire. They are automated output, not a human
+            assessment.
+        </p>
+
         <div class="metadata">
             <div class="metadata-item">
                 <strong>API Provider:</strong>
