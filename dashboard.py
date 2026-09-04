@@ -940,7 +940,7 @@ def generate_html_dashboard(output_dir=DASHBOARD_DIR):
         
         <footer class="mt-12 text-center text-gray-500 text-sm">
             <p>Generated on: """ + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + """</p>
-            <p class="mt-1"><a href="https://github.com/fabriziosalmi/ethical-ai" target="_blank">Ethical AI Assessment Tool</a></p>
+            <p class="mt-1"><a href="https://github.com/fabriziosalmi/ethical-ai" target="_blank" rel="noopener">Ethical AI Assessment Tool</a></p>
         </footer>
     </div>
 
